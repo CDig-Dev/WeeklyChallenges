@@ -38,9 +38,9 @@ namespace ChallengesWithTestsMark8
 
         public string GetGreeting(string nameOfPerson)
         {
-            if (string.IsNullOrEmpty(nameOfPerson))
+            if (nameOfPerson == "")
             {
-                return "Hey";
+                return "Hello!";
             }
             return $"Hello, {nameOfPerson}!";
         }
